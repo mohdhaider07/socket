@@ -10,7 +10,7 @@ socket.on("open", () => {
 });
 
 socket.on("message", (data) => {
-	console.log("\nServer: " + data);
+	console.log("\nNumber is : " + data);
 	sendMsg();
 });
 

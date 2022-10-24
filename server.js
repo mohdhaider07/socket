@@ -9,7 +9,8 @@ wss.on("connection", (ws) => {
 
 	ws.on("message", (message) => {
 		console.log("\nClient: " + message);
-		sendMsg(ws);
+		Number(message) % 2 === 0 ? ws.send("Even") : ws.send("Odd");
+		// sendMsg(ws);
 	});
 
 	ws.on("close", () => {
