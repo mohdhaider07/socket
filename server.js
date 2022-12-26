@@ -15,7 +15,7 @@ wss.on("connection", (ws) => {
 
 	ws.on("close", () => {
 		console.log("Client disconnected");
-	});
+	 });   
 });
 
 const sendMsg = (ws) => {
@@ -27,5 +27,5 @@ const sendMsg = (ws) => {
 	rl.question(">> ", (msg) => {
 		ws.send(msg);
 		rl.close();
-	});
+	} );
 };
