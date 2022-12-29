@@ -8,7 +8,7 @@ socket.on("open", () => {
 	console.log("Connected to server");
 	sendMsg();
 });
-
+     
 socket.on("message", (data) => {
 	console.log("\nNumber is : " + data);
 	sendMsg();
