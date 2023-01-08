@@ -15,12 +15,16 @@ socket.on("message", (data) => {
 });
 
 socket.on("error", () => {
-	console.log("Error connecting to server");
+
+	
+
+
+console.log("Error connecting to server");
 });
 
 const sendMsg = () => {
 	//closing the previous readline
-	if (rl) rl.close();
+	   if (rl) rl.close();
 
 	//creating a new readline
 	rl = readline.createInterface({
