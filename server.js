@@ -2,7 +2,7 @@ const { WebSocketServer } = require("ws");
 const wss = new WebSocketServer({ port: 8080 });
 const readline = require("readline");
 
-let rl;
+var rl;
 
 wss.on("connection", (ws) => {
 	console.log("Client connected");
