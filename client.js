@@ -3,7 +3,7 @@ const socket = new WebSocket("ws://localhost:8080");
 const readline = require("readline");
 
 let rl;
-
+   
 socket.on("open", () => {
 	console.log("Connected to server");
 	sendMsg();
